@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materializa 3D | Valencia, Carabobo</title>
+  <link rel="icon" type="image/png" href="Muestras_3D/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Hoja de Estilos Externa -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVEGACIÓN -->
+  <header>
+    <div class="brand">
+      <div class="brand-logo">Materializa <span>3D</span></div>
+      <span class="location-badge">📍 Valencia, Carabobo</span>
+    </div>
+    <nav>
+      <a href="#trabajos">Nuestro Trabajo</a>
+      <a href="#materiales">Materiales</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#cotizador">Cotizar</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <span class="hero-badge">⚡ Impresión de Alta Velocidad Bambu Lab P1S</span>
+    <h1>Servicio Profesional de <span>Impresión & Modelado 3D</span></h1>
+    <p>
+      ¡Bienvenidos a <strong>Materializa 3D</strong>! ¿Viste una foto en Pinterest, TikTok o Instagram? Nos encargamos de ubicar el modelo, diseñarlo si no existe y fabricarlo con acabados profesionales.
+    </p>
+    <a href="#cotizador" class="btn">Iniciar Cotización</a>
+  </section>
+
+  <!-- SECCIÓN CARRUSEL: NUESTRO TRABAJO -->
+  <section id="trabajos">
+    <h2 class="section-title">Nuestro Trabajo</h2>
+    <p class="section-subtitle">Muestra real de proyectos, soportes y figuras fabricadas en nuestro taller.</p>
+
+    <div class="carousel-container">
+      <!-- Diapositiva 1: Soporte Oni -->
+      <div class="carousel-slide active">
+        <div class="img-wrapper">
+          <img src="Muestras_3D/Oni_PS5_control_holder.jpeg" alt="Soporte PS5 Oni Mask">
+        </div>
+        <div class="carousel-caption">
+          <h3>Soporte PS5 Máscara Oni</h3>
+          <p>Soporte para control DualSense con diseño de máscara Oni e incrustaciones bicolor.</p>
+        </div>
+      </div>
+
+      <!-- Diapositiva 2: Dragón Articulado -->
+      <div class="carousel-slide">
+        <div class="img-wrapper">
+          <img src="Muestras_3D/DFOU8644.jpg" alt="Dragón Articulado Azul">
+        </div>
+        <div class="carousel-caption">
+          <h3>Dragón Articulado Azul</h3>
+          <p>Impresión flexible de alta precisión en una sola pieza con texturas detalladas.</p>
+        </div>
+      </div>
+
+      <!-- Diapositiva 3: Sylveon -->
+      <div class="carousel-slide">
+        <div class="img-wrapper">
+          <img src="Muestras_3D/HGHC1071.JPG" alt="Figura Pokémon Sylveon">
+        </div>
+        <div class="carousel-caption">
+          <h3>Figura Coleccionable Pokémon (Sylveon)</h3>
+          <p>Modelado multi-pieza ensamblado con acabado plano a color de alta fidelidad.</p>
+        </div>
+      </div>
+
+      <!-- Controles Carrusel -->
+      <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+      <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+    </div>
+
+    <div class="carousel-dots">
+      <span class="dot active" onclick="setSlide(0)"></span>
+      <span class="dot" onclick="setSlide(1)"></span>
+      <span class="dot" onclick="setSlide(2)"></span>
+    </div>
+  </section>
+
+  <!-- SECCIÓN GUÍA DE MATERIALES -->
+  <section id="materiales">
+    <h2 class="section-title">Guía de Materiales</h2>
+    <p class="section-subtitle">Elegimos el filamento ideal evaluando costo vs. uso de tu pieza.</p>
+
+    <div class="materials-grid">
+      <!-- PLA -->
+      <div class="material-card">
+        <span class="material-badge bg-pla">🟢 Económico ($)</span>
+        <h4>PLA Estándar</h4>
+        <p>Ideal para figuras decorativas, soportes sencillos, llaveros y maquetas. Gran nitidez estética.</p>
+      </div>
+
+      <!-- PETG -->
+      <div class="material-card">
+        <span class="material-badge bg-petg">🔵 Intermedio ($$)</span>
+        <h4>PETG Técnico</h4>
+        <p>Resistente a golpes, caídas y exposición solar/calor. Perfecto para repuestos y piezas mecánicas.</p>
+      </div>
+
+      <!-- PLA SILK -->
+      <div class="material-card">
+        <span class="material-badge bg-silk">✨ Premium ($$$)</span>
+        <h4>PLA SILK (Brillante)</h4>
+        <p>Acabado sedoso y metalizado reflectivo. Recomendado para trofeos, máscaras y piezas de exhibición.</p>
+      </div>
+
+      <!-- TPU -->
+      <div class="material-card">
+        <span class="material-badge bg-tpu">🟠 Especializado ($$$$)</span>
+        <h4>TPU Flexible (Goma)</h4>
+        <p>Material elástico tipo caucho. Ideal para carcasas, protectores, empuñaduras o sellos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN EXPLICACIÓN DEL PROCESO -->
+  <section id="proceso">
+    <h2 class="section-title">¿Cómo Trabajamos?</h2>
+    <p class="section-subtitle">Un proceso claro y transparente antes de iniciar tu proyecto.</p>
+
+    <div class="process-grid">
+      <!-- Paso 1 -->
+      <div class="process-card">
+        <div class="process-number">01</div>
+        <h3>Entendemos lo que Buscas</h3>
+        <p>Analizamos las necesidades de tu proyecto: dimensiones aproximadas, uso (decorativo o mecánico) y requerimientos de resistencia o detalles estéticos.</p>
+      </div>
+
+      <!-- Paso 2 -->
+      <div class="process-card">
+        <div class="process-number">02</div>
+        <h3>Búsqueda del Modelo 3D</h3>
+        <p>Buscamos el diseño:</p>
+        <ul class="process-sublist">
+          <li><strong>Modelo Gratuito:</strong> Cotizamos únicamente el costo de la impresión.</li>
+          <li><strong class="badge-warn">Modelo Protegido/De Pago:</strong> Te avisamos que posee derechos de autor y se suma el valor de la licencia del modelo.</li>
+          <li><strong>Si no existe:</strong> Te indicamos la opción de diseñar el modelo 3D desde cero.</li>
+        </ul>
+      </div>
+
+      <!-- Paso 3 -->
+      <div class="process-card">
+        <div class="process-number">03</div>
+        <h3>Modelado 3D a Medida</h3>
+        <p>Si el modelo debe fabricarse desde cero, se cotiza según el tiempo estimado de diseño:</p>
+        <ul class="process-sublist">
+          <li><strong>Piezas Simples/Funcionales:</strong> Tiempos moderados con medidas y uso claro.</li>
+          <li><strong>Figuras y Piezas Decorativas:</strong> Requieren más horas de modelado orgánico por su alto nivel de detalle.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN COTIZADOR INTERACTIVO -->
+  <section id="cotizador">
+    <h2 class="section-title">Formulario de Cotización</h2>
+    <p class="section-subtitle">Completa los pasos y te enviaremos el presupuesto directo a WhatsApp.</p>
+
+    <div class="wizard-container">
+      <div class="progress-bar">
+        <div class="progress-step active" id="p-step-1">1. Dimensiones</div>
+        <div class="progress-step" id="p-step-2">2. Categoría & Material</div>
+        <div class="progress-step" id="p-step-3">3. Archivo 3D</div>
+      </div>
+
+      <!-- PASO 1: DIMENSIONES -->
+      <div class="step-content active" id="step-1">
+        <h3>📐 Dimensiones Aproximadas de la Pieza</h3>
+        <p class="step-desc">
+          Indica el tamaño aproximado en centímetros (cm) si lo conoces. La cama continua de nuestra Bambu Lab P1S es de <strong>25 x 25 x 25 cm</strong>.
+        </p>
+
+        <div class="dim-grid">
+          <div class="form-group">
+            <label for="dim-x">Ancho (X) cm:</label>
+            <input type="number" id="dim-x" min="1" placeholder="Ej: 10" oninput="checkDimensions()">
+          </div>
+          <div class="form-group">
+            <label for="dim-y">Largo (Y) cm:</label>
+            <input type="number" id="dim-y" min="1" placeholder="Ej: 10" oninput="checkDimensions()">
+          </div>
+          <div class="form-group">
+            <label for="dim-z">Alto (Z) cm:</label>
+            <input type="number" id="dim-z" min="1" placeholder="Ej: 10" oninput="checkDimensions()">
+          </div>
+        </div>
+
+        <div class="alert-box" id="bed-warning">
+          <strong>⚠️ Nota de Tamaño Especial:</strong> La dimensión ingresada supera los 25 cm de la cama de impresión. 
+          <br><em>¡No te preocupes! Tu pieza se cotizará para imprimirse por partes y ser ensamblada posteriormente.</em>
+        </div>
+
+        <p class="help-text">* Si no conoces las medidas exactas, déjalas en blanco y las calcularemos juntos con tus fotos por WhatsApp.</p>
+
+        <div class="btn-container">
+          <div></div>
+          <button class="btn" onclick="nextStep(2)">Siguiente ➔</button>
+        </div>
+      </div>
+
+      <!-- PASO 2: TIPO, MATERIAL Y ACABADO -->
+      <div class="step-content" id="step-2">
+        <h3>🎯 Categoría del Proyecto</h3>
+        
+        <div class="options-grid">
+          <div class="option-card" onclick="selectPieceType('Soporte Gaming / Accesorio', this)">
+            <h4>🎮 Soporte / Gaming</h4>
+            <p>Bases de controles PS5/Xbox, audífonos o accesorios gamer.</p>
+          </div>
+          <div class="option-card" onclick="selectPieceType('Figura / Coleccionable', this)">
+            <h4>🎨 Figura / Anime</h4>
+            <p>Personajes, estatuillas o bustos decorativos con alto detalle.</p>
+          </div>
+          <div class="option-card" onclick="selectPieceType('Repuesto / Pieza Mecánica', this)">
+            <h4>⚙️ Repuesto / Mecánico</h4>
+            <p>Engranajes, carcasas, tapas o repuestos sustitutos.</p>
+          </div>
+        </div>
+
+        <!-- Material -->
+        <div class="form-group">
+          <label for="material-select">🧵 Selección de Material:</label>
+          <select id="material-select">
+            <option value="PLA (Económico - Decorativo/Figuras)">🟢 PLA (Económico - Decorativo / General)</option>
+            <option value="PETG (Resistente - Mecánico/Uso duro)">🔵 PETG (Resistente - Piezas mecánicas y exterior)</option>
+            <option value="PLA SILK (Premium - Acabado brillante/metalizado)">✨ PLA SILK (Premium - Acabado metálico/brillante)</option>
+            <option value="TPU (Flexible - Tipo goma/caucho)">🟠 TPU (Flexible - Tipo goma / elástico)</option>
+            <option value="Aconsejarme el mejor material según uso" selected>❓ No sé cuál elegir (Aconsejarme según mi proyecto)</option>
+          </select>
+        </div>
+
+        <!-- Postprocesado / Pintado -->
+        <div class="form-group">
+          <label for="finish-select">🎨 Acabado y Postprocesado:</label>
+          <select id="finish-select">
+            <option value="Color base directo de impresión (Sin pintar)">Color base directo del filamento (Sin pintar)</option>
+            <option value="Impresión multicolor integrada (AMS)">Impresión multicolor integrada en la máquina (AMS)</option>
+            <option value="Pintado detallado a mano / Postprocesado">Pintado a mano / Lijado y acabado especial</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="piece-desc">Detalles del uso o funciones esperadas:</label>
+          <textarea id="piece-desc" rows="3" placeholder="Ej: Es un soporte para control DualSense de PS5. Me gustaría que combine color negro y blanco."></textarea>
+        </div>
+
+        <div class="btn-container">
+          <button class="btn btn-prev" onclick="prevStep(1)">⬅ Atrás</button>
+          <button class="btn" onclick="nextStep(3)">Siguiente ➔</button>
+        </div>
+      </div>
+
+      <!-- PASO 3: ARCHIVO Y OPCIONES CAD -->
+      <div class="step-content" id="step-3">
+        <h3>📁 Estado del Modelo 3D</h3>
+
+        <div class="form-group">
+          <label>¿Dispones del archivo listo para imprimir?</label>
+          <div class="options-grid">
+            <div class="option-card" onclick="selectFileOption('si', this)">
+              <h4>✅ Sí tengo el archivo</h4>
+              <p>Formatos .STL, .STEP, .3MF, .OBJ</p>
+            </div>
+            <div class="option-card" onclick="selectFileOption('no', this)">
+              <h4>🔍 No tengo el archivo 3D</h4>
+              <p>Tengo fotos de Pinterest/TikTok o requiero diseño</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="file-upload-section" style="display: none;">
+          <div class="upload-box">
+            <p>Puedes adjuntar tu archivo directamente en el chat de WhatsApp al enviar la solicitud.</p>
+          </div>
+        </div>
+
+        <div id="no-file-section" style="display: none;">
+          <div class="form-group">
+            <label for="cad-action">¿Cómo deseas proceder?</label>
+            <select id="cad-action">
+              <option value="Buscar fotos en bancos de modelos (Libre / Protegido)">Tengo fotos de Pinterest/TikTok: Buscar si existe en bancos de modelos</option>
+              <option value="Cotizar diseño / modelado 3D a medida">Requiero modelado / diseño 3D desde cero</option>
+              <option value="Tengo un diseñador externo">Tengo un diseñador externo que me hará el archivo</option>
+            </select>
+          </div>
+
+          <div class="info-box">
+            📌 <strong>Recordatorio de Materializa 3D:</strong>
+            Si el modelo es libre se cotiza solo la impresión. Si posee derechos se notificará el valor de la licencia. Si debe diseñarse, el precio dependerá de las horas de modelado.
+          </div>
+        </div>
+
+        <div class="btn-container">
+          <button class="btn btn-prev" onclick="prevStep(2)">⬅ Atrás</button>
+          <button class="btn btn-whatsapp" onclick="sendWhatsApp()">Enviar a WhatsApp 📲</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 <strong>Materializa 3D</strong> - Valencia, Estado Carabobo, Venezuela.</p>
+    <p class="footer-sub">Tecnología Bambu Lab | Calidad & Precisión 3D</p>
+  </footer>
+
+  <!-- Lógica JavaScript Externa -->
+  <script src="script.js"></script>
+</body>
+</html>
