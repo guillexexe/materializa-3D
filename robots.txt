@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://guillexexe.github.io/materializa-3D/sitemap.xml
